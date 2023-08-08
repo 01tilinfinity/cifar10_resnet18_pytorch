@@ -230,7 +230,7 @@ if __name__ == '__main__':
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=args.val_batch_size,
                                              sampler=val_sampler, **kwargs)
     
-    # Set up standard ResNet-50 model.
+    # Set up standard ResNet-18 model.
     model = models.resnet18()
 
     # By default, Adasum doesn't need scaling up learning rate.
